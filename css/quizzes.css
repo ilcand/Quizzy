@@ -1,0 +1,195 @@
+:root{
+  --dark-color: #333;
+  --light-color: #fff;
+  --filler-color: #888;
+  --hover-color: rgba(255, 0, 0, 0.795);
+  --dropdown-items: rgba(51, 51, 51, 0.685);
+}
+
+/* document style reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+#navbar{
+  background: var(--dark-color);
+  position: sticky;
+  display: block;
+  width: 100%;
+  top: 0;
+
+  z-index: 5;
+}
+
+#navbar .navbar-items{
+  /* position: relative; */
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar .navbar-items li{
+  display: inline-block;
+  position: relative;
+  padding: 1.25rem 1rem;
+ 
+  
+}
+
+#navbar .navbar-items li:hover{
+  background: var(--hover-color);
+}
+
+#navbar .navbar-items li a{
+  text-decoration: none;
+  color: var(--light-color);
+  font-size: 1.25rem;
+}
+
+.navbar-items .active{
+  background: var(--hover-color);
+}
+
+.navbar-items li ul{
+  /* !hide by default */
+  display: none;
+}
+
+.navbar-items .dropdown-items{
+  cursor: pointer;
+}
+
+/* nested dropdown show */
+.navbar-items li:hover .dropdown-items{
+  display: block;
+  position: absolute;
+  left: 0;
+  width: auto;
+  margin-top: 1.25rem;
+  text-align: center;
+  color: var(--light-color);
+  background: var(--dropdown-items);
+}
+
+.dropdown-items li{
+  width: 100%;
+}
+
+#showcase{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* border: 10px solid green; */
+  /* padding: 1rem; */
+}
+
+#showcase .showcase-overlay{
+  display: block;
+  position: relative;
+  background: url('../img/quizzes-cover.jpg') no-repeat center center/cover;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+}
+
+#showcase .showcase-content{
+  position: absolute;
+  display: flex;
+  background: rgba(51, 51, 51, 0.616);
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+  top: auto;
+
+  padding: 1rem;
+  text-align: center;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.showcase-content .container-table{
+  display: block;
+  color: #fff;
+  /* border: 2px solid green; */
+  margin-top: 1.5rem;
+  max-height: 85%;
+
+  width: auto;
+
+  overflow-y: scroll;
+
+  
+}
+
+/* hide scrollbar for Chrome, Safari and Opera */
+.container-table::-webkit-scrollbar{
+  display: none;
+}
+
+/* hide scrollbar for IE, Edge and Firefox */
+.container-table{
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.container-table table{
+  font-size: 1.5rem;
+  background: rgba(34, 34, 34, 0.808);
+  width: 100%;
+
+  border-radius: 5px;
+  
+}
+
+.container-table table th{
+  padding: 2rem;
+  background: var(--hover-color);
+ 
+} 
+
+/* .container-table table tr{ */
+  /* background: rgba(0, 0, 255, 0.568); */
+  /* padding: 5rem;
+  margin: 5rem; */
+  /* border-bottom: dotted 2px #fff; */
+  
+/* } */
+
+.container-table table td{
+  padding: 0.75rem;
+  padding-top: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  border-bottom: solid 2px #fff;
+  
+
+  
+}
+
+.container-table .btn{
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background: var(--light-color);
+  color: var(--dark-color);
+
+}
+
+.container-table .btn:hover{
+  background: var(--hover-color);
+  border: none;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.container-table .hidden{
+  display: none;
+}

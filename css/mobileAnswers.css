@@ -1,0 +1,16 @@
+@media (max-width: 600px){
+  .container-table table{
+    font-size: 1rem;
+    height: 85%;
+  }
+  .container-table table th{
+    padding: 0.25rem;
+  }
+  .container-table table td{
+    
+    padding: 0.5rem;
+    line-height: 2rem;
+    width: 33.33%;
+  }
+
+}

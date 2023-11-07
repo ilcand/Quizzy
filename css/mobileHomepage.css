@@ -1,0 +1,45 @@
+@media (max-width: 1050px){
+  #showcase .showcase-content{
+    display: block;
+    top: 0;
+    padding: 0.5rem;
+    font-size: 15px;
+  }
+
+  #showcase .showcase-content .intro{
+    display: block;
+    margin: auto;
+    padding: auto;
+    margin-bottom: 0.75rem;
+    overflow: scroll;
+
+  }
+
+  #showcase .showcase-content .intro::-webkit-scrollbar{
+    display:none;
+  }
+
+  #showcase .showcase-content .intro{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  #showcase .showcase-content .btn{
+    padding: auto;
+    margin: auto;
+    
+  }
+
+  #showcase .showcase-content .btn-option{
+    padding: auto;
+  }
+
+  #showcase .showcase-content .option-text{
+    
+    font-size: 15px;
+  }
+
+  #showcase .showcase-content h1{
+   margin-bottom: 12.5%;
+  }
+}

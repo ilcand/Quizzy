@@ -1,0 +1,34 @@
+@media (max-width: 600px){
+  #showcase .showcase-content{
+    justify-content: center;
+   
+    text-align: center;
+  }
+
+  #showcase .showcase-content .container-table{
+    display: block;
+    overflow-y: scroll;
+  }
+
+  .container-table table{
+    font-size: 1rem;
+    background: rgba(34, 34, 34, 0.808);
+    width: 100%;
+    
+  
+    border-radius: 5px;
+    
+  }
+
+  .container-table table th{
+    padding: 0.25rem;
+  }
+
+  .container-table table th:first-child{
+    display: none;
+  }
+
+  .container-table table td:first-child{
+    display: none;
+  }
+}

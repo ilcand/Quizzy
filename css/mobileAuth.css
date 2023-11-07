@@ -1,0 +1,70 @@
+@media(max-width: 600px){
+  #showcase{
+    overflow: hidden;
+    
+    position: static;
+  }
+
+  #showcase .showcase-content{
+    display: block;
+    position: static; 
+    padding: 10px 2.5px;
+    overflow-y: scroll;
+    height: 100%;
+    left: 0;
+    
+    width: 100%;
+  }
+
+  #showcase .showcase-content .container{
+    display: block;
+    height: auto;
+    
+  }
+
+}
+
+/* TODO: add landscape responsive layout */
+/*! affects desktop screen too ->  @media screen and (orientation:landscape) */
+@media screen and (orientation:landscape) and (max-width: 1000px) {
+  #showcase{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .showcase-content{
+    font-size: 0.25rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+
+  }
+
+  .container{
+    position: fixed;
+    display: block;
+    margin: auto;
+    width: 75%;
+    height: 70%;
+    overflow: scroll;
+    font-size: 0.20rem;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+}

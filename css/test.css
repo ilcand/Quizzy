@@ -1,0 +1,89 @@
+/* showcase area */
+#showcase{
+  background: url('../img/homepage-cover.jpg') no-repeat center center/cover;
+  top: 5rem;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -2;
+}
+
+#showcase .showcase-content{
+  display: flex;
+  background: rgba(51, 51, 51, 0.685);
+  z-index: 0;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+ 
+}
+
+.showcase-content .intro{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 45%;
+  text-align: center;
+  font-weight: bolder;
+
+  /*! choose design ... */
+  /* justify-content: center;
+  align-items: center; */
+  
+  padding: 1rem 2rem;
+  margin: 5rem;
+
+  border: 1px solid var(--dark-color);
+  background: rgba(51, 51, 51, 0.363);
+   
+}
+
+.showcase-content .intro h1{
+  color: var(--light-color);
+  margin-bottom: 2rem;
+}
+
+/* !align option-buttons to the center of the container */
+.showcase-content .container-options{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* border: 2px solid #fff; */
+  height: 65%;
+
+  /* overflow-y: scroll; */
+}
+
+.intro .btn{
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border-style: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+
+.intro .option-text{
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.showcase-content .intro .btn{
+  margin-top: 0.5rem; 
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border-style: none;
+  
+}
+
+
+
+.intro .btn:hover{
+  background: var(--hover-color);
+  color: var(--light-color);
+}
